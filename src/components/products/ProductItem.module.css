@@ -4,9 +4,11 @@
 }
 
 .product img {
-    max-width: 100px;
+    /* max-width: 100px;
     max-height: 30%;
-    min-height: 30%;
+    min-height: 30%; */
+    width: 100px;
+    height: 150px;
 }
 
 .product h3 {
