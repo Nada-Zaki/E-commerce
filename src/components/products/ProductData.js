@@ -17,6 +17,7 @@ const ProductData = () => {
   const location = useLocation();
   const dispatch = useDispatch();
   const {product, productLoading} = useSelector(state => state.products);
+  const wishlistItems = useSelector(state => state.wishlist.items);
   const [quantity, setQuantity] = useState(1);
 
   const token = localStorage.getItem('token');
@@ -42,6 +43,10 @@ const ProductData = () => {
     history.replace({pathname:'/login',state: { 
       from: location.pathname
     }})
+  }
+
+  const handleRemoveFromList = () => {
+    dispatch(wishlistActions.removeItemFromList(product.id));
   }
   
   return (
@@ -76,7 +81,9 @@ const ProductData = () => {
           </div>
         </form>
         <div className={classes["btn-container"]}>
-          <button className="btn" onClick={handleAddToList}>Add To Wishlist</button>
+          {wishlistItems.some(e => e.id===product.id) ?
+            <button className="btn remove-btn" onClick={handleRemoveFromList}>Remove From Wishlist</button> : 
+           <button className="btn" onClick={handleAddToList}>Add To Wishlist</button>}
         </div>
       </div>
       </Fragment> : ""}

@@ -3,6 +3,7 @@
     align-self: flex-start;
     width: 100%;
 }
+
 .wishlist .container {
     display: grid;
     grid-auto-rows: 350px;
