@@ -1,0 +1,14 @@
+.radio-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-input label {
+    font-size: 1rem;
+}
+
+.error {
+    font-size: 0.6rem;
+    color: red;
+}

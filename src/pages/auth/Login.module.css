@@ -1,0 +1,53 @@
+.login {
+    width: 100%;
+    height: 86vh;
+}
+
+.test-credentials {
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    padding: 4rem;
+    max-width: 40%;
+}
+
+.form-control {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login button {
+    width: 70%;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width:1140px) {
+    .card {
+        min-width: 45%;
+    }
+    .login button {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .card {
+        min-width: 70%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .card {
+        min-width: 90%;
+        padding: 1rem;
+    }
+}
+
+
+

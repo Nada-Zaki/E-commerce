@@ -1,0 +1,43 @@
+.home {
+    min-width: 98vw;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.main-img {
+    width: 100%;
+    z-index: 0;
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.main-img img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.description {
+    position: absolute;
+    left: 5%;
+    bottom: 40%;
+    color: #dbd6d6;
+}
+
+.description a {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
+
+@media only screen and (max-width:350px) {
+    .home {
+        font-size: 0.8rem;
+    }
+    .description {
+        width: 50%;
+        bottom: 20%;
+    }
+}

@@ -1,0 +1,43 @@
+.payment {
+    width: 100%;
+    height: 86vh;
+}
+
+.payment-card {
+    padding: 4rem;
+    width: 50%;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-btn {
+    width: 100px;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width:767px) {
+    .payment-card {
+        min-width: 90%;
+    }
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment-btn {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .payment-card {
+        padding: 1rem;
+    }
+}

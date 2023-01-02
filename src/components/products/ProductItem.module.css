@@ -1,0 +1,50 @@
+.product {
+    padding: 0.5rem;
+    position: relative;
+}
+
+.product img {
+    max-width: 100px;
+    max-height: 30%;
+    min-height: 30%;
+}
+
+.product h3 {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    min-height: 20%;
+}
+
+.product .price {
+    font-size: 1.5rem;
+}
+
+.product .details-btn {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin: 1rem;
+}
+
+.product .rating {
+    width: 100px;
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    font-size: 0.8rem;
+    color: rgba(155,155,155,0.9)
+}
+
+.product .rating p {
+    display: inline-block;
+    background-color: var(--orange-color);
+    color: white;
+    padding: 0 0.4rem;
+    margin-right: 0.3rem;
+    border-radius: 20px;
+    font-weight: 600;
+    min-width: 50px;
+}
+
+.product .rating .star-icon {
+    font-size: 0.7rem;
+}

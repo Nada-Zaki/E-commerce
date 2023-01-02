@@ -1,0 +1,53 @@
+.wishlist {
+    padding: 1rem;
+    align-self: flex-start;
+    width: 100%;
+}
+.wishlist .container {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,250px);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.empty-list {
+    height: 85vh;
+}
+
+.empty-list a {
+    width: 30%;
+    font-size: 1.5rem;
+}
+
+.empty-list h2 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+
+
+@media only screen and (max-width:767px) {
+    .wishlist {
+        text-align: center;
+    }
+    .wishlist .container {
+        justify-content: center;
+    }
+    .empty-list a {
+        width: 60%;
+    }
+    .empty-list h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .empty-list a {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .empty-list h2 {
+        font-size: 1rem;
+    }
+} 

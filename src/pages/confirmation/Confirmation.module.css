@@ -1,0 +1,19 @@
+.confirmation {
+    width: 100%;
+    height: 86vh;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.confirmation a {
+    min-width: 40%;
+    margin-top: 2rem;
+}
+
+
+
+@media only screen and (max-width:767px) { 
+    .confirmation a {
+        min-width: 80%;
+    }
+}

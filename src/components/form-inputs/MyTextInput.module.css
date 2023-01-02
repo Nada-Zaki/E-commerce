@@ -1,0 +1,34 @@
+.text-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.text-input i {
+    color: var(--orange-color);
+    position: absolute;
+    z-index: 3;
+}
+label {
+    font-size: 0.7rem;
+}
+.text-input input {
+    border-color: transparent transparent rgba(0,0,0,0.3) transparent;
+    padding: 0.3rem 1.5rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+    position: relative;
+    width: 300px;
+}
+
+.error {
+    font-size: 0.6rem;
+    color: red;
+}
+
+
+
+@media only screen and (max-width:500px) {
+    .text-input input {
+        max-width: 200px;
+    }
+}

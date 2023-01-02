@@ -1,0 +1,146 @@
+.details {
+    margin-top: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.details .image {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(20vh,30vh,40vh);
+    height: clamp(20vh,30vh,40vh);
+    padding: 3%;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.details .image img {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.details .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .title h2 {
+    max-width: 70%;
+}
+
+.details .data .stock {
+    background-color: #04af04;
+    color: white;
+    border-radius: 5px;
+    padding: 0 0.2rem;
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.details .description {
+    color: rgba(0,0,0,0.6);
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.details .price {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.details .data {
+    max-width: 70%;
+}
+
+.details .rating {
+    font-size: 0.8rem;
+    color: rgba(155,155,155,0.9);
+}
+
+.details .rating p {
+    display: inline-block;
+    background-color: var(--orange-color);
+    color: white;
+    padding: 0 0.4rem;
+    margin-right: 0.3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.details .rating .star-icon {
+    font-size: 0.7rem;
+}
+
+.details button {
+    width: 70%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    margin-bottom: 1rem;
+}
+
+.input label {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.quantity-form input {
+    padding: 3px 5px;
+    margin: 7px 0;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .details {
+        margin-top: 6rem;
+    }
+    .data {
+        min-width: 90%;
+    }
+    .image {
+        margin-right: 0;
+    }
+    button {
+        align-self: center;
+    }
+    .btn-container {
+        width: 100%;
+        text-align: center;
+    } 
+    .details button {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .details {
+        justify-content: center;
+        padding: 1rem;
+    }
+    .title h3 {
+        max-width: 50%;
+    }
+    .data {
+        min-width: 100%;
+    }
+    button {
+        align-self: center;
+    }
+    .btn-container button {
+        width: 95%;
+    }
+}
+
+
+

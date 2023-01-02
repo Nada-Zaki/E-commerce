@@ -1,0 +1,58 @@
+.checkout {
+    width: 100%;
+    height: 86vh;
+}
+.checkout-card {
+    padding: 4rem;
+    max-width: 70%;
+}
+
+.form-control {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout button {
+    font-size: 0.9rem;
+    width: 30%;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+
+
+
+@media only screen and (max-width:767px) {
+    .checkout-card {
+        min-width: 90%;
+    }
+    .form-control {
+        margin-bottom: 1rem;
+    }
+    .actions {
+        flex-direction: column;
+    }
+    .checkout button {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .checkout-card {
+        padding: 1rem;
+    }
+    .form-control {
+        gap: 10px;
+    }
+    .checkout h2 {
+    font-size: 1rem;
+    }
+}

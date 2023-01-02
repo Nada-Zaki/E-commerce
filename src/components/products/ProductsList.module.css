@@ -1,0 +1,22 @@
+.products-area {
+    min-width: 98vw;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.products {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,250px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+

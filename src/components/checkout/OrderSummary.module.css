@@ -1,0 +1,38 @@
+.order-summary {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.order-summary .item {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.order-summary img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.order-summary span {
+    font-weight: 300;
+}
+
+.order-summary strong {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width:900px) {
+    .order-summary .item {
+        grid-template-columns: 20% 80%;
+        gap: 0rem;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .order-summary .price {
+        font-size: 1.2rem;
+    }
+}
