@@ -6,7 +6,7 @@
 
 .products {
     display: grid;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 350px;
     grid-template-columns: repeat(auto-fit,250px);
     gap: 30px;
     justify-content: center;
